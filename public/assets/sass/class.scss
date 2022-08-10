@@ -1,0 +1,41 @@
+
+
+// @import "zero";
+@import "colors";
+@import "fonts";
+
+.jumbotron .container {
+	position: relative;
+	.join-box {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+
+tr.early,
+tr.past {
+	background-color: $deprecated_tr;
+}
+
+
+#grades.admin {
+	td {
+		textarea {
+			opacity: 0;
+			height: 0;
+			padding: 0;
+		}
+		input:focus + textarea,
+		textarea:focus,
+		textarea.commented {
+			opacity: 1;
+			height: auto;
+			padding: inherit;
+		}
+	}
+}
+
+
+

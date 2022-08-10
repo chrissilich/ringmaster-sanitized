@@ -1,0 +1,48 @@
+@media (min-width: 1400px) {
+	.container {
+		width: 1370px;
+		margin: 0 auto;
+	}
+}
+
+.text-muted {
+	color: #bbb;
+}
+
+.badge {
+	opacity: 0.5;
+}
+
+:hover > .badge {
+	opacity: 1;
+}
+
+.jumbotron {
+	background:#d81515;
+	h1, h2, h3 {
+		color: white;
+	}
+	a {
+		color: #ccc;
+	}
+}
+
+.jumbotron.jumbotron-image {
+	background-position: 50% 50%;
+	background-size: cover;
+
+	color: white;
+
+	text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.modal .modal-body {
+    max-height: 500px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+// bring datepickers above modals.
+.datepicker.dropdown-menu {
+	z-index: 1050 !important;
+}

@@ -1,0 +1,11 @@
+#setup_departments ul li,
+#setup_classes ul li {
+  list-style: none;
+  margin: 4px; }
+  #setup_departments ul li label,
+  #setup_classes ul li label {
+    font-weight: normal; }
+    #setup_departments ul li label input[type="checkbox"],
+    #setup_classes ul li label input[type="checkbox"] {
+      margin: 0 3px 0 0;
+      font-size: 18pt; }

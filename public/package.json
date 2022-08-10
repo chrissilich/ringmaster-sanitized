@@ -1,0 +1,26 @@
+{
+  "name": "ringmaster",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp-util": "~3.0.7",
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.1.1",
+    "node-bourbon": "~4.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "bootstrap-timepicker": "^0.5.2",
+    "bourbon": "^6.0.0",
+    "dropzone": "^5.5.1",
+    "jquery": "^3.4.1",
+    "jquery.cookie": "^1.4.1"
+  }
+}

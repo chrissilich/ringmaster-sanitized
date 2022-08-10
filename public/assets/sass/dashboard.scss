@@ -1,0 +1,21 @@
+
+
+@import "mymixins";
+// @import "zero";
+@import "colors";
+@import "fonts";
+@import "bootstrap-mods";
+
+
+#dashboard-groups,
+#dashboard-classes,
+#dashboard-classes-teach {
+	table {
+		tr {
+			td {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		}
+	}	
+}

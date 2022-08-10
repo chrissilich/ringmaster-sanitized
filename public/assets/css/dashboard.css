@@ -1,0 +1,40 @@
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+    margin: 0 auto; } }
+
+.text-muted {
+  color: #bbb; }
+
+.badge {
+  opacity: 0.5; }
+
+:hover > .badge {
+  opacity: 1; }
+
+.jumbotron {
+  background: #d81515; }
+  .jumbotron h1, .jumbotron h2, .jumbotron h3 {
+    color: white; }
+  .jumbotron a {
+    color: #ccc; }
+
+.jumbotron.jumbotron-image {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+
+.modal .modal-body {
+  max-height: 500px;
+  max-height: 70vh;
+  overflow-y: auto; }
+
+.datepicker.dropdown-menu {
+  z-index: 1050 !important; }
+
+#dashboard-groups table tr td,
+#dashboard-classes table tr td,
+#dashboard-classes-teach table tr td {
+  padding-top: 0;
+  padding-bottom: 0; }

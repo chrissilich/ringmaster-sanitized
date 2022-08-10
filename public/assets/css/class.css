@@ -1,0 +1,22 @@
+.jumbotron .container {
+  position: relative; }
+  .jumbotron .container .join-box {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+tr.early,
+tr.past {
+  background-color: #f2f2f2; }
+
+#grades.admin td textarea {
+  opacity: 0;
+  height: 0;
+  padding: 0; }
+
+#grades.admin td input:focus + textarea,
+#grades.admin td textarea:focus,
+#grades.admin td textarea.commented {
+  opacity: 1;
+  height: auto;
+  padding: inherit; }

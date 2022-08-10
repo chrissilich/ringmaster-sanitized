@@ -1,0 +1,178 @@
+
+
+@import "mymixins";
+// @import "zero";
+@import "colors";
+@import "fonts";
+@import "bootstrap-mods";
+
+
+body {
+	padding-top: 50px;
+
+	> .container {
+		margin-top: 35px;
+	}
+
+	> .jumbotron {
+		//margin-top: 25px;
+		box-shadow: 0px, -7px, 7px, rgba(0,0,0,0.2) inset;
+	}
+}
+
+#navigation {
+	background-color: white;
+
+	#nav {
+		position: relative;
+		z-index: 10;
+
+		.navbar-brand {
+			small {
+				opacity: 0.4;
+				font-size: 60%;
+			}
+		}
+	}
+	#breadcrumbs {
+		position: relative;
+		z-index: 9;
+		background-color: #ddd;
+		padding: 7px 64px 5px 64px;
+		box-shadow: 0, 5px, 5px, rgba(0, 0, 0, 0.15);
+		color: #bbb;
+		font-size: 10pt;
+
+		a {
+			color: #666;
+		}
+	}
+}
+
+
+
+.navbar-brand {
+	position: relative;
+	padding-left: 64px;
+
+	img {
+		position: absolute;
+		width: 24px;
+		left: -30px;
+		top: 13px;
+		transform: rotate(-360deg);
+	}
+
+	img.transition {
+		transition: all 2.0s ease-out;
+	}
+
+	img.animate {
+		transform: rotate(0deg);
+		left: 30px;
+	}
+}
+
+
+.visible-on-parent-hover {
+	visibility: hidden;
+}
+
+*:hover > .visible-on-parent-hover {
+	visibility: visible;
+}
+
+
+.hidden-loader {
+	display: none;
+	margin: 20px auto;
+	width: 32px;
+}
+
+.display-none {
+	display: none;
+}
+
+.text-opacity-muted {
+	opacity: 0.5;
+}
+
+
+.read-more {
+	max-height: 42px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.read-more-expanded {
+	max-height: inherit;
+}
+
+
+#ajax-modals .micro-loader {
+	display: inline-block;
+	// display: none;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+	background-image: url("../img/loader.gif");
+	background-repeat: no-repeat;
+	background-size: contain;
+} 
+
+.chunk-uploader {
+	margin: 10px 0;
+	padding: 0;
+	border: 0;
+	min-height: 0;
+
+	.drop-zone {
+		width: 100%;
+		display: inline-block;
+		padding: 30px 0 23px 0;
+		text-align: center;
+		border: 6px dashed rgba(220,220,220,0.75);
+		background-color: #eee;
+		border-radius: 20px;
+		margin: 0 0 5px 0;
+
+		&.drop-zone-full {
+			background-color: #bfdfbc;
+			border-color: #86ba81;
+		}
+
+		ul {
+			padding-left: 0;
+		}
+
+		.message {
+			pointer-events: none;;
+		}
+	}
+
+	.uploads {
+		margin: 10px auto;
+		list-style: none;
+		padding: 0;
+
+		li {
+
+		}
+	}
+
+	.btn {
+		margin-top: 8px;
+	}
+
+	.drop-zone-previews {
+		display: none;
+	}
+
+}
+
+
+[name='upload_ids'] {
+	// where the IDs of the newly uploaded files go before assignment submission
+	display: none;
+}

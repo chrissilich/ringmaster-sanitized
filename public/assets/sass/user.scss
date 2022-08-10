@@ -1,0 +1,24 @@
+
+
+// @import "zero";
+@import "colors";
+@import "fonts";
+
+
+table#user_list {
+	tr {
+		td {
+			.change {
+				opacity: 0;
+				transition: all 0.3s;
+			}           
+		}
+	}
+	tr:hover {
+		td {
+			.change {
+				opacity: 1;
+			}
+		}
+	}
+}
